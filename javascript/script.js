@@ -40,3 +40,20 @@ function addNumbers () {
 
     document.getElementById("sum").textContent= "the sum is: " + (parseInt(num1) + parseInt(num2));
 }
+
+function getStringLength() {
+    let text = document.getElementById("lengthString").value;
+    document.getElementById("StringLengthOutput").textContent= text + " has " + text.length +" charecters.";
+}
+
+function togglePassword() {
+    let passwordButton = document.getElementById("password button");
+    if (passwordButton.checked == false)
+    {
+        document.getElementById("password area").type = "text";
+    }
+    else
+    {
+        document.getElementById("password area").type = "password";
+    }
+}
