@@ -48,7 +48,7 @@ function getStringLength() {
 
 function togglePassword() {
     let passwordButton = document.getElementById("password button");
-    if (passwordButton.checked == false)
+    if (passwordButton.checked == true)
     {
         document.getElementById("password area").type = "text";
     }
@@ -57,3 +57,21 @@ function togglePassword() {
         document.getElementById("password area").type = "password";
     }
 }
+
+function toggleText() {
+    document.getElementById("changinText").style.fontSize="100px"
+} 
+
+let toggle =false;
+function disaperaerTheText() {
+    if (toggle)
+    {
+    document.getElementById("disaperingText").hidden = true;
+    toggle = ! toggle;
+}
+else {
+    document.getElementById("disaperingText").hidden = false;
+    toggle = ! toggle;
+}
+}
+
